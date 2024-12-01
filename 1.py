@@ -9,6 +9,10 @@ ive = "I AM"
 print(ive)
 ive = "장원영"
 print(ive)
-print(f"나는 {ive}입니다.")
-print("나는", ive, "입니다.")
-print("나는 " + ive + "입니다.")
+Ive = "카리나"
+print(ive, Ive)
+
+
+#my_home : snake_case
+#MyHome : CamelCase
+#myHome : PascalCase
