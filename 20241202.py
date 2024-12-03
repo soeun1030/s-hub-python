@@ -76,7 +76,7 @@ print(not True) # print(!True)는 안됨 # c언어 : !
 # in 연산자
 cart = ["계란", "마늘", "콩나물", "커피"]
 print("두부" in cart)
-print("계란" in cart)
+print("계란" in cart) # in 연산자 반대는 not in 
 
 
 # if 조건문
