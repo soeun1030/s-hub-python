@@ -43,6 +43,10 @@ def intro(**kw):  #intro = introduce
 
 intro(name="Alice", age=25, city="NY")
 
+def a(*numbers, b):
+    print(numbers, "b", b)
+a(1,2,3,4,b=5)  #a(1,2,3,4,5) 얘는 에러
+
 
 # 내장 함수 - sorted()
 list = [2,4,1,4,6]
@@ -81,6 +85,11 @@ print(round(127, -2))  #둘째자리에서 반올림
 # 내장함수 - pow(거듭제곱)
 print(2**3)
 print(pow(2,3))
+
+
+# 내장함수 - list(s)
+l = ["p","y","t","h","o","n"]
+print("".join(l))
 
 
 # 재귀함수 ##반드시 종료조건이 필요함 ###중요
@@ -131,7 +140,7 @@ def fibo_memo(n):
 print(fibo_memo(num))
 
 
-# 하노이의 탑 코드 - 재귀함수에서 유명한 내용
+# 하노이의 탑 코드 - 재귀함수에서 유명한 내용  ##fn = fn-1 + 1 + fn-1
 num = int(input("수를 입력하시오: "))
 total_moves = 0
 def hanoi(number_of_disks_to_move, from_, to_, via_):
