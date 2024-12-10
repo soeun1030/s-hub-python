@@ -134,12 +134,22 @@
 # print(a.value)
 
 
-# 모듈 만들기
+# 모듈 만들고 불러오기
+## 모듈 불러오기 방법1
 # import calc_module  #컨트롤누르고 초록색(파일이름) 클릭하면 파일나타남
 # print(calc_module.add(1,2))  #파일이름쓰고 점누르면 파일의 기능이 뜬다
 # print(calc_module.div(1,2))
 # print(calc_module.mul(1,2))
 # print(calc_module.sub(1,2))
 
-from calc_module import add
-print(add(1,2))
+# ## 모듈 불러오기 방법2
+# from calc_module import add
+# print(add(1,2))  #calc_module.add()는 안됨
+
+# ## 모듈 불러오기 방법3
+# import calc_module as cm  #calc_module을 cm으로 줄이고 계속 cm으로 사용하는 방법
+# print(cm.add(1,2))
+
+
+# 표준모듈 - math 모듈
+import math
