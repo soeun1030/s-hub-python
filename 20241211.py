@@ -211,4 +211,35 @@
 # print(f"타자 시간 : {et: .2f}초")  #.2f는 et를 소수점 둘째자리까지 표시하겠다는 뜻(f:float 실수)
 
 
-# 모듈 만들기
+# 모듈 만들기 -> 다른 파일 만들어서 진행함(modules, modules2,mylib_user2)
+
+
+# # 파일 입출력 - w
+# f = open("text.txt", "w")  #text.txt 파일이 Python폴더안에 생성됨  #w는 파일에 데이터쓰기 위해서 여는데 기존 내용은 초기화된다
+# f.write("Hello World\n")
+# ## print(f.write("Hello World\n"))  #Hello World 글자 수 출력(띄어쓰기 포함) : 12출력
+# f.close()
+
+
+# # 파일 입출력 - r(read)
+# f2 = open("text.txt")
+# print(f2.read())
+# f2.close()
+
+
+# # 파일 입출력 - a
+# f = open("text.txt", "a")  #text.txt 파일에 #1에 적은 내용이 추가됨
+# f.write("Hello World222\n")  #1
+# f.close()
+
+
+# 파일 입출력 - readline()
+f2 = open("text.txt")  
+print(f2.read())
+f2.close()
+
+f3 = open("text.txt")
+print(f3.readline(), end="")  #text.txt의 첫번째 줄 출력
+print(f3.readline(), end="")  #text.txt의 두번째 줄 출력
+print(f3.readline(), end="")  #text.txt의 세번째 줄 출력
+f3.close()
